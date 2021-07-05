@@ -10,21 +10,19 @@ var fizz = 'Fizz';
 var buzz = 'Buzz';
 var fizzBuzz = 'FizzBuzz';
 
-for(var i = 1; i < 100; i++) {
-    if(numbers % 3 == 0) {
-        numbers === fizz;
-        console.table(numbers);
+for(var i = 1; i < 101; i++) {
+    if(i % 3 == 0 && i % 5 == 0) {
+        numbers[i] = fizzBuzz;
 
-    } else if(numbers % 5 == 0) {
-        numbers === buzz;
-        console.table(numbers);
+    } else if(i % 5 == 0) {
+        numbers[i]= buzz;
+    
 
-    } else if(numbers % 15 == 0) {
-        numbers === fizzBuzz;
-        console.table(numbers);
+    } else if(i % 3 == 0) {
+        numbers[i] = fizz;
 
     } else {
-        numbers == numbers;
+        numbers[i] = i;
     }   
 }
 
