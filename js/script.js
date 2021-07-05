@@ -15,9 +15,8 @@ for(var i = 1; i < 101; i++) {
         numbers[i] = fizzBuzz;
 
     } else if(i % 5 == 0) {
-        numbers[i]= buzz;
+        numbers[i] = buzz;
     
-
     } else if(i % 3 == 0) {
         numbers[i] = fizz;
 
@@ -27,6 +26,9 @@ for(var i = 1; i < 101; i++) {
 }
 
 console.table(numbers);
+
+var display = document.getElementById('n-1-100');
+display.innerHTML =  numbers;
 
 
 
